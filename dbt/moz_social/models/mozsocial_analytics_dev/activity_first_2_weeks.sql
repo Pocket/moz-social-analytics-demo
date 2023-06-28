@@ -70,4 +70,4 @@ WHERE
   AND (a.actor_type = 'Person' OR a.actor_type IS NULL)
 GROUP BY
   1,
-  2;
+  2
