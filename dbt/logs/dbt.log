@@ -1,0 +1,115 @@
+[0m10:30:57.478292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1029f9690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1037e4d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1037e4c40>]}
+
+
+============================== 10:30:57.487659 | bb49466c-3e9b-4c4d-a144-ba62384b5a0c ==============================
+[0m10:30:57.487659 [info ] [MainThread]: Running with dbt=1.5.2
+[0m10:30:57.488015 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/mozilla/.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m10:31:13.417133 [debug] [MainThread]: Starter project path: /Users/mozilla/projects/moz-social-analytics-demo/.venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m10:33:23.024221 [info ] [MainThread]: Profile moz_social written to /Users/mozilla/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m10:33:23.024915 [info ] [MainThread]: 
+Your new dbt project "moz_social" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:33:23.025647 [debug] [MainThread]: Command `dbt init` succeeded at 10:33:23.025513 after 145.57 seconds
+[0m10:33:23.026009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1029f9690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c76590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c777c0>]}
+[0m10:33:23.026388 [debug] [MainThread]: Flushing usage events
+[0m10:34:00.663829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064bdc60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10779ef20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10779e800>]}
+
+
+============================== 10:34:00.666062 | 31d92c37-9279-4847-a448-3837d1f1d792 ==============================
+[0m10:34:00.666062 [info ] [MainThread]: Running with dbt=1.5.2
+[0m10:34:00.666415 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/mozilla/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m10:34:00.666805 [info ] [MainThread]: dbt version: 1.5.2
+[0m10:34:00.667119 [info ] [MainThread]: python version: 3.10.7
+[0m10:34:00.667472 [info ] [MainThread]: python path: /Users/mozilla/projects/moz-social-analytics-demo/.venv/bin/python
+[0m10:34:00.667687 [info ] [MainThread]: os info: macOS-13.2.1-arm64-arm-64bit
+[0m10:34:00.667904 [info ] [MainThread]: Using profiles.yml file at /Users/mozilla/.dbt/profiles.yml
+[0m10:34:00.668110 [info ] [MainThread]: Using dbt_project.yml file at /Users/mozilla/projects/moz-social-analytics-demo/moz_social/dbt_project.yml
+[0m10:34:00.668299 [info ] [MainThread]: Configuration:
+[0m10:34:00.672262 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m10:34:00.847948 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m10:34:00.850630 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m10:34:00.851082 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m10:34:00.851312 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:34:00.851508 [info ] [MainThread]: Required dependencies:
+[0m10:34:00.851743 [debug] [MainThread]: Executing "git --help"
+[0m10:34:00.865724 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:34:00.866506 [debug] [MainThread]: STDERR: "b''"
+[0m10:34:00.866752 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:34:00.867041 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m10:34:00.867254 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m10:34:00.867473 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "default", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+Runtime Error
+  Credentials in profile "snowflake_query_extraction", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+Runtime Error
+  Credentials in profile "snowflake_usage", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m10:34:00.868037 [debug] [MainThread]: Command `dbt debug` failed at 10:34:00.867945 after 0.22 seconds
+[0m10:34:00.868424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064bdc60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106777c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106775300>]}
+[0m10:34:00.868760 [debug] [MainThread]: Flushing usage events
+[0m10:35:42.027077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106dd1c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1080b2f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1080b2830>]}
+
+
+============================== 10:35:42.029257 | f33d21c9-d2f5-48e5-9d88-17865051b89d ==============================
+[0m10:35:42.029257 [info ] [MainThread]: Running with dbt=1.5.2
+[0m10:35:42.029601 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/mozilla/.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m10:35:42.029964 [info ] [MainThread]: dbt version: 1.5.2
+[0m10:35:42.030265 [info ] [MainThread]: python version: 3.10.7
+[0m10:35:42.030600 [info ] [MainThread]: python path: /Users/mozilla/projects/moz-social-analytics-demo/.venv/bin/python
+[0m10:35:42.030812 [info ] [MainThread]: os info: macOS-13.2.1-arm64-arm-64bit
+[0m10:35:42.031010 [info ] [MainThread]: Using profiles.yml file at /Users/mozilla/.dbt/profiles.yml
+[0m10:35:42.031211 [info ] [MainThread]: Using dbt_project.yml file at /Users/mozilla/projects/moz-social-analytics-demo/dbt/dbt_project.yml
+[0m10:35:42.031408 [info ] [MainThread]: Configuration:
+[0m10:35:42.035358 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m10:35:42.203501 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m10:35:42.206096 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m10:35:42.206568 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m10:35:42.206889 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:35:42.207188 [info ] [MainThread]: Required dependencies:
+[0m10:35:42.207458 [debug] [MainThread]: Executing "git --help"
+[0m10:35:42.218682 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:35:42.219357 [debug] [MainThread]: STDERR: "b''"
+[0m10:35:42.219573 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:35:42.219822 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m10:35:42.220021 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m10:35:42.220234 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "default", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+Runtime Error
+  Credentials in profile "snowflake_query_extraction", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+Runtime Error
+  Credentials in profile "snowflake_usage", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m10:35:42.220840 [debug] [MainThread]: Command `dbt debug` failed at 10:35:42.220749 after 0.21 seconds
+[0m10:35:42.221153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106dd1c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070893c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107088f10>]}
+[0m10:35:42.221462 [debug] [MainThread]: Flushing usage events
