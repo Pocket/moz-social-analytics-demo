@@ -5,7 +5,6 @@ description = ""
 authors = ["Braun <breyes@mozilla.com>"]
 license = "Apache-2.0"
 readme = "README.md"
-packages = [{include = "moz_social_analytics_demo"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"

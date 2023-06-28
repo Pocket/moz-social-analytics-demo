@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: activity_first_2_weeks
+    description: "Counts related to a user's activity within the first two weeks of account creation."
+    columns:
+      - name: account_id 
+        description: "Unique identifier of an account."
+        tests:
+          - unique
+          - not_null
+
+      - name: account_created_at
+        description: "The day and time that the account was created."
+        tests:
+          - not_null 
+
+      - name: week_1_status_count
+        description: "Counts the number of times this user shared a status in the first 7 days after account creation."
+        tests: 
+          - not_null 
+
+      - name: week_1_favorite_count
+        description: "Counts the number of times this user favorited a status in the first week after account creation."
+        tests:
+          - not_null 
+
+      - name: week_1_follow_count
+        description: "Counts the number of times this user followed an account in the first week after account creation."
+        tests:
+          - not_null 
+
+      - name: week_2_status_count
+        description: "Counts the number of times this user shared a status in the second week after account creation."
+        tests: 
+          - not_null 
+
+      - name: week_2_favorite_count
+        description: "Counts the number of times this user favorited a status in the second week after account creation."
+        tests:
+          - not_null 
+
+      - name: week_2_follow_count
+        description: "Counts the number of times this user followed an account in the second week after account creation."
+        tests:
+          - not_null 
+
